@@ -66,4 +66,5 @@ plot(TukeyHSD(model1),las=2)
 
 ## Conclusions
 
+From the box numbers, numerical summaries and the above Anova test we assume that there is also a disparity between alcohol intake and the number of people who decide to stand in line.
 
