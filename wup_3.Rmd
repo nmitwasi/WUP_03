@@ -32,6 +32,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
+  Accordingly, the total alcohol intake of people who choose to sit on the back seat at 9.6 percent tends to be slightly above that of those who stood in the front at 1.8 percent on the medium of the alcohol consumption and 3.28 percent on the center of the back seat.
   
 ### get fancy  
 
