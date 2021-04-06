@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Nadya Mitwasi"
+date: "Spring 2021"
 output: html_document
 ---
 
@@ -16,6 +16,10 @@ davisdata <- read.csv(file="UCDavis.csv")
 ```
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
+
+$H_0$: the null hypothesis is that there is no difference between the alcohol consumed between the row you choose to sit in ??
+  
+$H_A$: the alternative hypothesis is that there is a difference between the alcohol consumed between the row you choose to sit in ??
 
 ## Now with ggplot - first select the basic data
 
