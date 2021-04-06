@@ -40,9 +40,29 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+The box plot states that the confidence level for back row seats is on average 95% and if it doesn't overlap, statistically important variations can be seen in the medium seating range. It further shows that there is no difference between the null hypothesis.
+
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data = davisdata )
+```
+
+The mathematical cross tabulation diagram reveals that, as compared to 1.8% in front rows and 3,28% in middle rows, mean alcohol intake by other people who choose to sit on the rear row is slightly greater by 9, 8%.
+
 ## Inferential Tests
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The anova test demonstrates that p is less than 0.05 and needs a p value of .000116. It tells us that the null hypothesis should be dismissed because there can be no row-based chnage in which a person is sitting.
+
+```{r}
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
 
 ## Conclusions
 
